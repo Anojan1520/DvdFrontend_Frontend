@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../HomePage/home.css">
+    <link rel="stylesheet" href="../Registration/signup.css">
+    <link rel="stylesheet" href="./Category.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="pop-cover">
+        <div class="popup-bg">
+        </div>
+        <div class="section-header">
+            <div class="popup">
+                <div class=" form-center">
+                    <form class="Registration white" id="form">
+
+                        <div>
+                            <h1>Your Details</h1>
+                        </div>
+                        <div>
+
+                        </div>
+                        <div class="form-devide">
+                            <div>
+                                <label>Firstname</label>
+                                <input type="text" id="firstname" required>
+                                <label>Position</label>
+                                <input type="text" id="Position" readonly >
+                            </div>
+
+                            <div>
+                                <label>Nation IC Number</label>
+                                <input type="text" id="Nic" readonly>
+                                <label>Mobile Number</label>
+                                <input type="text" id="Phone" required>
+                                <label>E-mail</label>
+                                <input type="text" id="email" required>
+
+                            </div>
+                        </div>
+                        <div class="pop-btn">
+                            <button class="pop-edit red" type="button" onclick="cancelProfile()">Cancel</button>
+                            <button class="pop-edit" type="submit">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="rent-pop">
+        <div class="rent-popup ">
+            <div class="pop-style">
+                <div class="rent-image">
+                    <img src="../assets/images.jpeg" alt="" id="movie-rent">
+                </div>
+                <div class="content">
+                    <div>
+                        <div class="flex">
+                            <h2 id="no"></h2>
+                            <button class="Cancel-btn" onclick="CancelPop()"><i class="fa fa-times"></i></button>
+                        </div>
+                        <h1>MovieDetails</h1>
+
+                    </div>
+                    <div class="Content-Devide">
+                        <div>
+                            <div class="rent-detailDivide">
+                                <h2>Movie:</h2>
+                                <h3 id="movie-name">Billa</h3>
+                            </div>
+                            <div class="rent-detailDivide">
+                                <h2>Genere:</h2>
+                                <h3 id="movie-genre">Action</h3>
+
+                            </div>
+
+                            <div class="rent-detailDivide">
+                                <h2>Director:</h2>
+                                <h3 id="rent-director">Vishnuvarathan</h3>
+
+                            </div>
+                            <div class="rent-detailDivide">
+                                <h2>Actor:</h2>
+                                <h3 id="Rent-actor">Ajithkumar</h3>
+
+                            </div>
+                            <div class="rent-detailDivide">
+                                <h2>ReleaseDate:</h2>
+                                <h3 id="rent-relesedate">2023/09/30</h3>
+
+                            </div>
+                            <div class="rent-detailDivide">
+                                <h2>No of Copies:</h2>
+                                <h3 id="rent-Quantity">150.00</h3>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="rent-detailDivide">
+                        <button class=" bg-rent" id="AddCart" onclick="AddCart(event)">Add Cart</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="rentedItem-pop" class="rent-cov">
+        <div class="rented-bg">
+            <div class="rent-head">
+                <h1>Selected movies</h1>
+                <button class="Cancel-btn"><i class="fa fa-times" onclick="CancelrentMoviePop()"></i></button>
+            </div>
+            <div id="all-cards">
+                <!-- <div class="rented-card">
+                    <div class="rented-image">
+                        <img src="../assets/images.jpeg" alt="" id="image-rent">
+                    </div>
+                    <div class="rented-content ">
+                        <div class="rent-inline">
+                            <P class="key">Name:</P>
+                            <P class="val">Thunivu</P>
+                        </div>
+                        <div class="rent-inline">
+
+                            <P class="key">Price:</P>
+                            <P class="val">150.00</P>
+                        </div>
+                        <div class="rent-inline">
+                            <P class="key">Quantity:</P>
+                            <input type="number">
+                        </div>
+                        <div class="rent-btn">
+                            <button onclick="CartRentCancel(event)">Cancel</button>
+
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+
+            <div class="total">
+                <div class="rent-inline">
+                    <P class="key">Total Movies:</P>
+                    <P class="val" id="movieTot"></P>
+                </div>
+                <div class="rent-inline">
+                    <P class="key">Total Price:</P>
+                    <P class="val" id="priceQuant">150.00</P>
+                </div>
+                <div class="rent-btn order-btn">
+                    <button onclick="COrders()">Order Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="rentNotification" class="not-card">
+
+        <div class="notify">
+
+            <button class="Cancel-btn"><i class="fa fa-times" onclick="CancelHistory()"></i></button>
+            <h1>Check Your Order History</h1>
+            <div id="notify-i">
+                <!-- <div class="rented-card">
+                        <div class="rented-image">
+                            <img src="../assets/images.jpeg" alt="" id="image-rent">
+                        </div>
+                        <div class="rented-content ">
+                            <div class="rent-inline">
+                                <P class="key">Name:</P>
+                                <P class="val">Thunivu</P>
+                            </div>
+                            <div class="rent-inline">
+                                <P class="key">Price:</P>
+                                <P class="val">150.00</P>
+                                <div class="rent-inline">
+                                    <P class="key">Total:</P>
+                                    <P class="val">150.00</P>
+                                </div>
+                            </div>
+                            <div class="rent-inline">
+                                <P class="key">Quantity:</P>
+                                <P class="val">15</P>
+                            </div>
+                            <div class="rent-inline">
+                                <P class="key">Status:</P>
+                                <P class="val">Accepted</P>
+                            </div>
+    
+                        </div>
+                    </div> -->
+
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+
+    <div class="nav-bg">
+        <nav class="nav-bar section-header">
+            <h1>AJ<span>DVD</span> </h1>
+            <ul>
+                <li><a id="homeLink" href="../HomePage/Home.html">Home</a></li>
+                <li><a id="CategoryLink" href="../CategoryPage/Category.html">Category</a></li>
+                <li><a href="">Aboutus</a></li>
+                <li><a href="">ContactUs</a></li>
+            </ul>
+            <div class="Register">
+                <a href="../Registration/Signin.html" class="btn-a" id="login"><i class="fa fa-sign-in"
+                        aria-hidden="true"></i> Sign in</a>
+                <a href="../Registration/signup.html" class="btn-a" id="signin"><i class="fa fa-user-plus"
+                        aria-hidden="true"> Sign up</i></a>
+                <button class="btn-a" id="Notification" onclick="OrderHistory()">Notify <i class="fa fa-bell"
+                        aria-hidden="true" onclick="OrderHistory()"></i></button>
+                <button class="btn-a" id="logout" onclick="logout()">Sign out <i class="fa fa-sign-out"
+                        aria-hidden="true"></i></button>
+                <button class="btn-a" id="Profile" onclick="Profile()">Profile <i class="fa fa-user"
+                        aria-hidden="true"></i></button>
+
+
+            </div>
+        </nav>
+    </div>
+    <main>
+        <div class="cat-bg">
+            <div class="cat-top">
+                <div class="cat-content">
+                    <h1>
+                        Rent Films to Watch on DVD & Blu-ray
+                    </h1>
+                    <h2>Films delivered to you</h2>
+                    <h5>Unlike online film rentals and streaming services, we post your films to you, you send them back
+                        to
+                        us when
+                        you're done then we'll post another title from your list and so on.</h5>
+                </div>
+                <div class="cat-image">
+                    <img src="../assets/dvd.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="movie-section section-header">
+            <div class="heading">
+                <h1>Explore Your Movies</h1>
+                <div>
+
+                    <Select id="genere-select" onclick="select()">
+                        <option value="AllMovies">AllMovies</option>
+
+                    </Select>
+                    <Select id="actor-select" onclick="Aselect()">
+                        <option value="Allactor">AllActor</option>
+
+                    </Select>
+                </div>
+
+            </div>
+            <div class="cart " id="cart-id">
+                <h1 id="rentCount">0</h1>
+                <button><i class="fa fa-shopping-cart" onclick="rentMoviePop()"></i></button>
+            </div>
+            <div class="search">
+                <input type="text" id="search" onkeyup="Search()" placeholder="Search here">
+
+
+            </div>
+
+
+
+            <div class="all-movie-card">
+
+                <!-- <div>
+                    <div class="movie-card">
+                        <img src="../assets/images (1).jpeg" alt="">
+                        <figcaption>Billa</figcaption>
+                        <div>
+                            <p>150.00Rs</p>
+                            <h4>Thriller</h4>
+                        </div>
+                        <button onclick="rentPopup()">Rent Now</button>
+                    </div>
+                    <div class="movie-card">
+                        <img src="../assets/images (3).jpeg" alt="">
+                        <figcaption>Varalaru</figcaption>
+                        <div>
+                            <p>150.00Rs</p>
+                            <h4>Clasic</h4>
+                        </div>
+                        <button onclick="rentPopup()">Rent Now</button>
+                    </div>
+                    <div class="movie-card">
+                        <img src="../assets/images (2).jpeg" alt="">
+                        <figcaption>Red</figcaption>
+                        <div>
+                            <p>150.00Rs</p>
+                            <h4>Action</h4>
+                        </div>
+                        <button>Rent Now</button>
+                    </div>
+                    <div class="movie-card">
+                        <img src="../assets/images (4).jpeg" alt="">
+                        <figcaption>Valimai</figcaption>
+                        <div>
+                            <p>150.00Rs</p>
+                            <h4>Thriller</h4>
+                        </div>
+                        <button>Rent Now</button>
+                    </div>
+                    <div class="movie-card">
+                        <img src="../assets/images (1).jpeg" alt="">
+                        <figcaption>Billa</figcaption>
+                        <div>
+                            <p>150.00Rs</p>
+                            <h4>Clasic</h4>
+                        </div>
+                        <button>Rent Now</button>
+                    </div>
+                    <div class="movie-card">
+                        <img src="../assets/images (3).jpeg" alt="">
+                        <figcaption>Varalaru</figcaption>
+                        <div>
+                            <p>150.00Rs</p>
+                            <h4>Horror</h4>
+                        </div>
+                        <button>Rent Now</button>
+                    </div>
+                    <div class="movie-card">
+                        <img src="../assets/images (1).jpeg" alt="">
+                        <figcaption>Billa</figcaption>
+                        <div>
+                            <p>150.00Rs</p>
+                            <h4>Horror</h4>
+                        </div>
+                        <button>Rent Now</button>
+                    </div>
+                    <div class="movie-card">
+                        <img src="../assets/images (3).jpeg" alt="">
+                        <figcaption>Varalaru</figcaption>
+                        <div>
+                            <p>150.00Rs</p>
+                            <h4>Action</h4>
+                        </div>
+                        <button>Rent Now</button>
+                    </div>
+    
+                    <div class="movie-card">
+                        <img src="../assets/images (3).jpeg" alt="">
+                        <figcaption>Varalaru</figcaption>
+                        <div>
+                            <p>150.00Rs</p>
+                            <h4>Thriller</h4>
+                        </div>
+                        <button>Rent Now</button>
+                    </div>
+                    <div class="movie-card">
+                        <img src="../assets/images (1).jpeg" alt="">
+                        <figcaption>Billa</figcaption>
+                        <div>
+                            <p>150.00Rs</p>
+                            <h4>Action</h4>
+                        </div>
+                        <button>Rent Now</button>
+                    </div>
+                </div> -->
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-content section-header">
+            <div>
+                <h2> About Us</h2>
+                <h3>Discover Unicom Entertainment</h3>
+                <h4>Learn more about our passion for bringing the best movies to your screen</h4>
+            </div>
+            <div>
+                <h2>Customer Support</h2>
+                <h3>Need Assistance?</h3>
+                <h4>Our support team is here to help you with any questions or issues. Reach out to us via email or
+                    call us at (123) 456-7890</h4>
+            </div>
+            <div>
+                <h2>Quick Links</h2>
+                <h3>Explore</h3>
+                <h4>
+                    <a href="">Browse Movies</a>
+                    <a href="">FAQs</a>
+                    <a href="">Help Center</a>
+                </h4>
+            </div>
+            <div>
+                <h2>Visit Us</h2>
+                <h3>Neervelly West Neervelly,Jaffna 40000</h3>
+            </div>
+
+        </div>
+    </footer>
+
+    </header>
+    <script src="./Category.js"></script>
+    <!-- <script src="../HomePage/home.js"></script> -->
+</body>
+
+</html>

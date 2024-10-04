@@ -1,0 +1,434 @@
+/* body{
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.1), rgb(0, 0, 0)), 
+    url(../assets/bg5.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.search {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+body {
+    background-image:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(../assets/bgCat.jpg);
+    background-size: cover;
+    /* Adjusts size to cover the element */
+    background-position: center;
+    /* Centers the background image */
+    background-repeat: no-repeat;
+}
+
+.search input {
+    font-size: 2rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    width: 40rem;
+    outline: none;
+    border: solid 1px #ffffff;
+    background: none;
+    color: white;
+
+
+}
+
+
+.search input::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 1.4rem;
+}
+
+.heading select {
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(19, 36, 77);
+    padding: 0.3rem;
+    border: none;
+
+}
+
+.heading button {
+    font-size: 1.6rem;
+    background-color: var(--B3-Blue);
+    color: white;
+    border: none;
+    padding: 0rem 1rem;
+    cursor: pointer;
+}
+
+.cat-bg {
+    padding-top: 2rem;
+    background-color: #ffaf40;
+}
+.cat-image{
+    padding-left: 20px;
+
+}
+.cat-image img {
+    height: 16rem;
+    border-radius: 20px;
+}
+
+.cat-top {
+    text-align: start;
+    margin-left: 140px;
+    display: flex;
+    padding: 20px;
+
+}
+.cat-content{
+    max-width: 650px;
+    
+}
+
+.cat-top h1 {
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.cat-top h2 {
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+}
+
+.cat-top h5 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.heading h1 {
+    color: rgb(255, 255, 255);
+}
+
+.rent-popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.70)
+}
+
+.pop-style {
+    padding: 0rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+#rent-pop {
+    display: none;
+}
+
+.rent-image img {
+    height: 27rem;
+    width: 20rem;
+    margin-top: 0.6rem;
+}
+
+.content {
+    padding: 0.4rem;
+    width: 24rem;
+}
+
+.rent-detailDivide {
+    display: flex;
+    align-items: center;
+}
+
+.Content-Devide {
+    display: flex;
+    margin-left: 1rem;
+
+}
+
+.rent-detailDivide h2 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin: 0%;
+    color: #002976;
+
+
+
+}
+
+.rent-detailDivide h3 {
+    font-size: 1.5rem;
+    font-weight: 450;
+    margin: 0%;
+    color: #000000;
+
+
+}
+
+.rent-detailDivide input {
+    height: 2rem;
+    width: 3rem;
+    font-size: 2rem;
+}
+
+.content h1 {
+    font-weight: 500;
+    color: rgb(255, 153, 0);
+    text-align: start;
+    margin: 0%;
+    font-size: 3rem;
+}
+
+.rent-detailDivide button {
+    /* margin-top: 2rem; */
+    font-size: 2rem;
+    padding: 0.4rem 1rem;
+    margin-left: 1rem;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+.rent-detailDivide button:hover {
+    background-color: rgb(30, 159, 210);
+}
+
+.Cancel-btn {
+    font-size: 2.1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+
+
+}
+
+.Cancel-btn:hover {
+    color: rgb(0, 0, 0);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 2.7rem;
+
+
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+
+}
+
+.cart button {
+    font-size: 3.5rem;
+    margin-top: 0.5rem;
+    background: none;
+    border: none;
+
+}
+
+.cart button i {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 0.7rem;
+    color: rgb(0, 105, 203);
+
+
+}
+
+.cart h1 {
+    background-color: red;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    padding: 0.1rem 0.8rem;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    margin-left: 2rem;
+    top: 0rem;
+
+}
+
+.Edit-btn {
+    background-color: rgb(17, 211, 7);
+
+}
+
+.rented-bg {
+    min-height: 100vh;
+    padding: 1rem 0.4rem;
+    max-height: max-content;
+    width: 26vw;
+    background-color: rgb(111, 162, 224);
+    position: absolute;
+
+}
+
+.rent-cov {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    z-index: 30;
+    left: 200%;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.50);
+    transition: 500ms;
+
+}
+
+.rent-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rent-head h1 {
+    color: rgb(255, 255, 255);
+}
+
+.rent-head button {
+    color: rgb(255, 0, 0);
+}
+
+.rent-head button:hover {
+    border-color: white;
+}
+
+
+.rented-image img {
+    height: 8rem;
+    width: 6rem;
+    margin-right: 1rem;
+}
+
+.rented-card {
+    height: 5rem;
+    margin-bottom: 1.5rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    padding: 0.5rem 1rem;
+    height: max-content;
+    margin-top: 1rem;
+}
+
+.rented-card .key {
+    font-size: 1.2rem;
+}
+
+.rented-card .val {
+    font-size: 1.2rem;
+}
+
+.rent-inline {
+    display: flex;
+    align-items: center;
+}
+
+.key {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: black;
+
+}
+
+.val {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+    color: black;
+}
+
+.rent-inline input {
+    width: 2.5rem;
+    font-size: 1.5rem;
+}
+
+.inline {
+    display: inline;
+}
+
+.rent-btn {
+    width: 100%;
+
+}
+
+.rent-btn button {
+    margin-top: 0.1rem;
+    margin-left: 0.4rem;
+    font-size: 1.5rem;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.2rem;
+    cursor: pointer;
+
+}
+
+.total {
+    color: white;
+    padding: 2rem;
+}
+
+.order-btn button {
+    background-color: rgb(255, 149, 0);
+    color: white;
+    padding: 0.5rem;
+
+
+}
+
+
+.not-card {
+    top: -100%;
+    left: 65%;
+    position: absolute;
+    position: fixed;
+    overflow-y: scroll;
+    z-index: 200;
+    display: none;
+    width: 100%;
+    height: 100%;
+    transition: 500ms;
+
+}
+
+.notify {
+    transition: 500ms;
+    width: max-content;
+    max-height: 80vh;
+    padding: 2rem;
+    overflow-y: scroll;
+    background-color: #FEA47F;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}

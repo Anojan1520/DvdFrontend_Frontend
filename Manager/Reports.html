@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../HomePage/home.css">
+    <link rel="stylesheet" href="../Registration/signup.css">
+    <link rel="stylesheet" href="./manager.css">
+    <link rel="stylesheet" href="./movie_add.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="nav-bg">
+        <nav class="nav-bar section-header">
+            <h1>AJ<span>DVD</span> </h1>
+            <ul>
+                <li><a href="../Manager/manager.html">Customer</a></li>
+                <li><a href="../Manager/movie_view.html">Movie</a></li>
+                <li><a href="../Manager/Reports.html">Reports</a></li>
+                <li><a href="./rentMovie.html">RentedMovies</a></li>
+                <li><a href="./CRent.html">Return</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="cus-table">
+        <div class="section-header">
+            <h1 class="table-heading">User Reports</h1>
+        </div>
+        <table id="UsersDetail-table">
+            <thead class="table-head">
+                <td>ShopName</td>
+                <td>Total Users</td>
+                <td>Login Users</td>
+            </thead>
+        </table>
+    </div>
+    <div class="cus-table">
+        <div class="section-header">
+            <h1 class="table-heading">Inventory Reports</h1>
+        </div>
+        <table id="movies-table">
+            <thead class="table-head">
+                <td>ShopName</td>
+                <td>TotalMovies</td>
+                <td>RentedMovies</td>
+            </thead>
+
+        </table>
+    </div>
+ 
+
+    <script src="./Reports.js"></script>
+</body>
+
+</html>

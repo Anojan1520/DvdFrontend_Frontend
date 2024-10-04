@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../Registration/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="nav-bg">
+        <nav class="nav-bar section-header">
+            <h1>AJ<span>DVD</span> </h1>
+            <ul>
+                <li><a id="homeLink" href="../HomePage/Home.html">Home</a></li>
+                <li><a id="CategoryLink" href="../CategoryPage/Category.html">Category</a></li>
+                <li><a href="">AboutUs</a></li>
+                <li><a href="">ContactUs</a></li>
+            </ul>
+            <div class="Register">
+                <a href="../Registration/Signin.html" class="btn-a" id="login"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign in</a>
+                <a href="../Registration/signup.html" class="btn-a" id="signin"><i class="fa fa-user-plus" aria-hidden="true"> Sign up</i></a>
+                <button class="btn-a" id="logout" onclick="logout()">Signout <i class="fa fa-sign-out" aria-hidden="true"></i></button>
+                <button class="btn-a" id="Profile" onclick="Profile()">Profile <i class="fa fa-user" aria-hidden="true"></i></button>
+            </div>
+        </nav>
+    </div>
+    <div class="pop-cover">
+        <div class="popup-bg">
+        </div>
+        <div class="section-header">
+            <div class="popup">
+                <div class=" form-center">
+                    <form class="Registration white" id="form">
+
+                        <div>
+                            <h1>Your Details</h1>
+                        </div>
+                        <div>
+
+                        </div>
+                        <div class="form-devide">
+                            <div>
+                                <label>Firstname</label>
+                                <input type="text" id="firstname" required>
+                                <label>Position</label>
+                                <input type="text" id="Position" required>
+                            </div>
+
+                            <div>
+                                <label>Nation IC Number</label>
+                                <input type="text" id="Nic" readonly>
+                                <label>Mobile Number</label>
+                                <input type="text" id="Phone" required>
+                                <label>E-mail</label>
+                                <input type="text" id="email" required>
+
+                            </div>
+                        </div>
+                        <div class="pop-btn">
+                            <button class="pop-edit red" type="button" onclick="cancelProfile()">Cancel</button>
+                            <button class="pop-edit" type="submit">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="well-bg">
+            <div class="wel-devide">
+
+                <div class="welcome-message">
+                    <h1><span>Unicom</span>Entertainment!</h1>
+                    <h2> Discover Your Next Favorite Film Anytime,Anywhere!</h2>
+                    <h3> Explore our collection now and make  your movie night
+                       <br> unforgettable.
+                    </h3>
+
+                </div>
+
+            </div>
+    </div>
+
+    <div class="main-ng">
+        <main class="section-header">
+
+            <div class="explore-movie">
+                <div class="movie-heading">
+                    <h1 class="movie-h1">
+                        Explore Movie
+                    </h1>
+                </div>
+                <div class="all-card">
+                    <div class="card">
+                        <h1><i class="fa fa-film" aria-hidden="true"></i></h1>
+                        <h3>Tamil Cinema</h3>
+                        <h4>"Tamil Treasures: Immerse Yourself in the Rich and Vibrant World of Tamil Films!"</h4>
+                    </div>
+                    <div class="card">
+                        <h1><i class="fa fa-film" aria-hidden="true"></i></h1>
+                        <h3>English Films</h3>
+                        <h4>"English Classics & New Hits: Enjoy a Wide Range of Stories from Around the Globe!"</h4>
+                    </div>
+                    <div class="card">
+                        <h1><i class="fa fa-film" aria-hidden="true"></i></h1>
+                        <h3>Tamil Dubbed</h3>
+                        <h4>
+                            "Tamil Dubbed Hits: Enjoy Popular Films with Tamil Voiceovers for a True Experience!"</h4>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+        </main>
+    </div>
+    <main class="section-header">
+
+        <div class="movie-section">
+            <div>
+                <h1 class="movie-h1" style="color: white;">New releases Movies</h1>
+            </div>
+            <div class="all-movie-card">
+                <div class="movie-card">
+                    <img src="../assets/images (1).jpeg" alt="">
+                </div>
+                <div class="movie-card">
+                    <img src="../assets/images (3).jpeg" alt="">
+                </div>
+                <div class="movie-card">
+                    <img src="../assets/images (2).jpeg" alt="">
+                </div>
+                <div class="movie-card">
+                    <img src="../assets/images (4).jpeg" alt="">
+                </div>
+                <div class="movie-card">
+                    <img src="../assets/images (1).jpeg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-content section-header">
+            <div>
+                <h2> About Us</h2>
+                <h3>Discover Unicom Entertainment</h3>
+                <h4>Learn more about our passion for bringing the best movies to your screen</h4>
+            </div>
+            <div>
+                <h2>Customer Support</h2>
+                <h3>Need Assistance?</h3>
+                <h4>Our support team is here to help you with any questions or issues. Reach out to us via email or
+                    call us at (123) 456-7890</h4>
+            </div>
+            <div>
+                <h2>Quick Links</h2>
+                <h3>Explore</h3>
+                <h4>
+                    <a href="">Browse Movies</a>
+                    <a href="">FAQs</a>
+                    <a href="">Help Center</a>
+                </h4>
+            </div>
+            <div>
+                <h2>Visit Us</h2>
+                <h3>Neervelly West Neervelly,Jaffna 40000</h3>
+            </div>
+
+        </div>
+    </footer>
+  <script src="./home.js"></script>
+</body>
+
+</html>

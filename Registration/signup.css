@@ -1,0 +1,131 @@
+.form-center {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #17c0eb; */
+    background-image: url(../assets/login.jpg);
+    background-size: cover;
+    background-position: center center;
+
+}
+body{
+    overflow-x: hidden;
+}
+.Registration {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 30px;
+    border-radius: 6px;
+    /* margin-top: 80px; */
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    padding-top: 1rem;
+
+}
+
+select {
+    font-size: 25px;
+}
+
+.Registration h1 {
+    color: var(--B2-Blue);
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.form-devide {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.form-devide input {
+    font-size: 25px;
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 1rem;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Add {
+    font-size: 1.5rem;
+    background-color: var(--B2-Blue);
+    color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+
+}
+.otp input{
+  width:4rem;
+  text-align: center;
+  font-size: 2rem
+}
+.a-tag{
+    margin-top: 5px;
+}
+p{
+    text-align: center;
+    color: rgb(0, 84, 105);
+}
+
+.pop-edit{
+
+    font-size: 2rem;
+    background-color:rgb(0, 80, 0);
+    color: white;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    width: 20%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.red{
+    background-color: rgb(161, 0, 0);
+}
+.white{
+    background-color: white;
+}
+
+.popup{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.70)
+}
+.pop-cover{
+    display: none;
+}
+.para{
+    color: red;
+    margin-top: 1rem;
+}

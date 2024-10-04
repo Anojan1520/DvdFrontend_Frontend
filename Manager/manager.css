@@ -1,0 +1,79 @@
+
+body{
+    background-color: #95afc0;
+}
+
+.table-heading{
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 1.5rem;
+}
+table{
+    width: 90%;
+    max-width: 100%;
+    margin: auto;
+    text-align: left;
+    border-spacing: 0cap;
+    padding-bottom: 3rem;
+    
+}
+.tr:nth-child(odd){
+    background-color: rgb(231, 231, 231);
+}
+tr:nth-child(even){
+    background-color: white;
+}
+.table-head{
+    background-color: rgba(0, 125, 202, 0.908);
+    color: white;
+}
+.table-head td{
+    font-size: 1.7rem;
+}
+tr td{
+    font-size: 1.5rem;
+    padding: 0.7rem;
+
+
+
+}
+
+.btn{
+    border: none;
+    background: none;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    width: max-content;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: rgb(143, 143, 143);
+}
+
+.btn-flex{
+    display: flex;
+    justify-content: center;
+    
+}
+.cus-tabl{
+    margin-bottom: 10rem;
+}
+.manager-footer{
+    margin-top: 21.8rem;
+}
+.add-manager{
+    background-color: rgb(3, 150, 167);
+    font-size: 1.7rem;
+    float: right;
+    margin-bottom: 1rem;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
